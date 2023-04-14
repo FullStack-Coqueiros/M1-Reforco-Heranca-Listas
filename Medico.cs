@@ -15,11 +15,17 @@ namespace Heranca
             Especialidade = especialidade;
         }
 
+        // public Medico(string nome, string telefone, string email, 
+        //               string crm, string especialidade): this (crm, especialidade) {
+        //     Nome = nome;
+        //     Telefone = telefone;
+        //     Email = email;
+        // }
+
         public Medico(string nome, string telefone, string email, 
-                      string crm, string especialidade): this (crm, especialidade) {
-            Nome = nome;
-            Telefone = telefone;
-            Email = email;
+                      string crm, string especialidade): base (nome,telefone,email) {
+            CRM = crm;
+            Especialidade = especialidade;
         }
     }
 }

@@ -3,15 +3,15 @@
 
 List<Pessoa> listaDePessoas = new List<Pessoa>();
 
-Heranca.Pessoa pessoa1 = new Heranca.Pessoa();
+Heranca.Pessoa pessoa1 = new Heranca.Medico();
 
 listaDePessoas.Add(pessoa1);
 
-Pessoa pessoa2 = new Pessoa("Vitor");
+Pessoa pessoa2 = new Enfermeiro("Vitor");
 listaDePessoas.Add(pessoa2);
 
 
-Pessoa pessoa3 = new Pessoa("Marcelo", "123", "Email");
+Pessoa pessoa3 = new Enfermeiro("Marcelo", "123", "Email");
 listaDePessoas.Add(pessoa3);
 
 Medico medico = new Medico();
@@ -19,8 +19,13 @@ medico.CRM = "56";
 medico.Email = "dssa";
 
 Medico medico1 = new Medico("546", "Clinico");
+Console.WriteLine(medico1.CRM);
 
-Medico medico2 = new Medico("Marcos","4566","Marcos@", "54652", "Oftalmo");
+
+Pessoa medico2 = new Medico("Marcos","4566","Marcos@", "54652", "Oftalmo");
+Console.WriteLine(((Medico)medico2).CRM);
+
+Pessoa enfermeiro = new Enfermeiro("Luiz","4566","Marcos@", "45656");
 
 ///Trabalhado com listas 
 Pessoa pessoa3ObtidaDaLista = listaDePessoas[2];
