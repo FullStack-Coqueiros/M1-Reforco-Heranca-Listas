@@ -26,5 +26,9 @@ namespace Heranca
         {
             Registro = registro;
         }
+
+        public override void Imprimir(){
+            Console.WriteLine($"{Nome}, { Telefone}, {Email}, {DataCadastro}, {Registro}");
+        }
     }
 }

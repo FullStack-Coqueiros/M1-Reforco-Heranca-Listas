@@ -11,7 +11,8 @@ Pessoa pessoa2 = new Enfermeiro("Vitor");
 listaDePessoas.Add(pessoa2);
 
 
-Pessoa pessoa3 = new Enfermeiro("Marcelo", "123", "Email");
+Pessoa pessoa3 = new Enfermeiro("Marcelo", "123", "Email", "Reg123");
+pessoa3.Imprimir();
 listaDePessoas.Add(pessoa3);
 
 Medico medico = new Medico();
@@ -23,6 +24,7 @@ Console.WriteLine(medico1.CRM);
 
 
 Pessoa medico2 = new Medico("Marcos","4566","Marcos@", "54652", "Oftalmo");
+medico2.Imprimir();
 Console.WriteLine(((Medico)medico2).CRM);
 
 Pessoa enfermeiro = new Enfermeiro("Luiz","4566","Marcos@", "45656");

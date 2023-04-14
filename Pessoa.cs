@@ -21,5 +21,12 @@ namespace Heranca
             Email = email;
         }
 
+
+        // public virtual void Imprimir(){
+        //     Console.WriteLine($"{Nome}, { Telefone}, {Email}, {DataCadastro}");
+        // }
+
+        public abstract void Imprimir();
+
     }
 }

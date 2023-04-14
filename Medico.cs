@@ -27,5 +27,8 @@ namespace Heranca
             CRM = crm;
             Especialidade = especialidade;
         }
+        public override void Imprimir(){
+            Console.WriteLine($"{Nome}, { Telefone}, {Email}, {DataCadastro}, {CRM}, {Especialidade}");
+        }
     }
 }
